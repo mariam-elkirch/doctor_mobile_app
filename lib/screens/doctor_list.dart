@@ -22,16 +22,16 @@ class _DoctorListState extends State<DoctorList> {
       bottomNavigationBar: bottomNavBar(),
       body: ListView(
           children: doctors.map((e) {
-        return Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            width: size.width,
-            height: size.height / 5,
-            // color: Colors.blue,
-            child: doctorCard(e),
-          ),
-        );
-      }).toList()),
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: size.width,
+                height: size.height / 5,
+                // color: Colors.blue,
+                child: doctorCard(e),
+              ),
+            );
+          }).toList()),
     );
   }
 
